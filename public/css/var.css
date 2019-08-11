@@ -1,0 +1,14 @@
+/* The global variables */
+/* colors */
+/* fonts */
+/* mixins */
+/*
+@mixin center-align($position: relative) {
+  position: $position;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: perspective(1px) translate(-50%,-50%);
+  -ms-transform: perspective(1px) translate(-50%,-50%);
+  transform: perspective(1px) translate(-50%,-50%);
+}
+*/
