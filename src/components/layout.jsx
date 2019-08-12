@@ -14,13 +14,13 @@ class Layout extends React.Component {
             scrollIndex: 0,
             scrollHeight: 0,
             timerId: null,
-        }
+        }   
     }
 
     componentDidMount () {
         document.addEventListener('scroll', this.onScroll)
         //ReactGA.initialize('UA-88860508-1') //Unique Google Analytics tracking number
-        this.logPageView()
+        //this.logPageView()
     }
 
     componentWillUnmount () {
@@ -56,7 +56,7 @@ class Layout extends React.Component {
 
         this.setState({ scrollHeight: scrollHeight })
 
-        const id = setInterval( this.autoScrollToHt, 200)
+        const id = setInterval( this.autoScrollToHt, 5)
         this.setState({ timerId: id })
     }
 
@@ -85,12 +85,15 @@ class Layout extends React.Component {
         return(
             <div>
                 <section className="jumbotron" id="home">
-                    <Jumbo scrollTo={this.startScrollToIndex} />
+                    <Jumbo downArrowClick={ this.startScrollToIndex }/>
                 </section> 
                 <section className="about" id="about">
                     <About />
                 </section> 
-                <section>
+                <section className="footer">
+                    <div className="logo">
+                        <img className="img" src="./assets/images/08112019 EE Logo.png" alt="EE Logo" />
+                    </div>
                     <Footer />
                 </section>
             </div>

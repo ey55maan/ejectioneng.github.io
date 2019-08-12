@@ -11,12 +11,10 @@ export default class Jumbo extends React.Component {
     	    		<h1>Ejection Engineering</h1>
 					<div className="jumbotron-text">Solving complex design issues with a unique approach</div>
 				</div>
-				<div className="down-arrow-wrapper">
-					<span className="fa-stack fa-4x">
-						<i className="fa fa-circle-thin fa-stack-2x"></i>
-						<i className="fa fa-chevron-down fa-stack-1x" onClick={() => this.props.scrollTo(1)}></i>
-					</span>
-	            </div>
+				<div className="down-arrow"
+                      onClick={() => this.props.downArrowClick(1)}>
+                  <a><i className="fa fa-arrow-circle-down fa-4x"></i></a>
+                </div>
             </div>	        
 	    );
 	}

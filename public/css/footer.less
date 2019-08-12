@@ -2,69 +2,31 @@ section.footer {
     position: relative;
     margin: 0;
     padding: 0; 
+    //background: url("../assets/images/shatter-background.svg") no-repeat center center;
+    background-color: #FFF;
 }
 
-// ******************************************* //
-// Join Section
-// ******************************************* //
-
-.join-container {
-    position: absolute;
-    background: url("../assets/images/shatter-background.svg") no-repeat center center;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.join-text {
+.logo {
+    //#graphic_block(.2em);
+    // border-radius: 50%;
+    // max-width: 400px;
     position: relative;
-    width: 75%;
-    top: 25%;
+    width: 80%;
+    top: 12%;
     left: 50%;
-    -webkit-transform: perspective(1px) translate(-50%,-25%);
-    -ms-transform: perspective(1px) translate(-50%,-25%);
-    transform: perspective(1px) translate(-50%,-25%);
+    -webkit-transform: perspective(1px) translate(-50%,-20%);
+    -ms-transform: perspective(1px) translate(-50%,-20%);
+    transform: perspective(1px) translate(-50%, -20%);
+    
 }
 
-.join-form {
-    vertical-align: middle;
-    justify-content: center;
-    /*position: relative;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: perspective(1px) translate(-50%,-50%);
-    -ms-transform: perspective(1px) translate(-50%,-50%);
-    transform: perspective(1px) translate(-50%,-50%);
-    */
-    //max-width: 20em;
+.img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;    
+    //border: 2px dashed red;
 }
-
-.join-email {
-    text-align: left;
-    padding-left: 1%;
-    padding-right: 2%;
-    line-height: 1; 
-    color: #000000;
-    font-family: @minor-font;
-}
-
-.btn-join {
-    background-color: @color-atomic-tangerine;
-    color: #000000 ;
-    border-color: @color-orange;
-    border-radius: 5px;
-    font-family: @minor-font;
-}
-
-.btn-join:hover,
-.btn-join:focus,
-.btn-join:active {
-    background-color:@color-orange;
-    color: #000000;
-    border-color: @color-atomic-tangerine;
-}
-
 
 #footer_paragraph_type() {
     display: block;
@@ -81,7 +43,7 @@ section.footer {
     // #footer_paragraph_type();
     height: 5em;
     width: 100%;
-    background-color: @color-san-juan-navy;
+    background-color: @color-bg;
     position: absolute;
     bottom: 0;
 }
@@ -96,7 +58,7 @@ section.footer {
     height: 45%;
     width: 100%;
     bottom: 0;
-    background-color: @color-atomic-tangerine;
+    background-color: @color-primary;
 }
 
 .footer-graphic-block {
@@ -119,7 +81,7 @@ section.footer {
 .contact-type span .fa-instagram,
 .contact-type span .fa-youtube-play,
 .contact-type span .fa-envelope-o {
-    background: @color-orange;
+    background: @color-accent;
     border-radius: 100%;
     color: white;
 }

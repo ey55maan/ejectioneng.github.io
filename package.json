@@ -2,7 +2,7 @@
   "name": "ejectioneng.github.io",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://www.ejectionengineering.com",
+  "homepage": "https://www.ejectionengineering.com/",
   "dependencies": {
     "gh-pages": "^2.1.1",
     "react": "^16.9.0",
