@@ -3,7 +3,7 @@
 section.jumbotron {
     margin: 0px;
     padding: 0px; 
-    background: url("../assets/images/lightbulb-background.svg") no-repeat center center;
+    background: url("../assets/images/callum-wale-AU1rKyKPJco-unsplash.jpg") no-repeat center center;
 }
 
 .jumbotron-container {
@@ -17,68 +17,49 @@ section.jumbotron {
     height: 85%;
     width: 85%;
     margin: 0 auto;
-    border: 2px dashed white;
     display: flex;
     flex-wrap: wrap;
 }
 
 .jumbotron-content  h1 {
     position: relative;
-    top: 30%;
+    top: 20%;
     left: 50%;
-    -webkit-transform: perspective(1px) translate(-50%,-30%);
-    -ms-transform: perspective(1px) translate(-50%,-30%);
-    transform: perspective(1px) translate(-50%, -30%);
+    -webkit-transform: perspective(1px) translate(-50%,-20%);
+    -ms-transform: perspective(1px) translate(-50%,-20%);
+    transform: perspective(1px) translate(-50%, -20%);
     text-align: center;
     color: white;
-    border: 2px dashed white;
 }
 
-/*.jumbotron-text {
+.jumbotron-text {
     position: relative;
-//    top: 80%;
-//    left: 50%;
-    // -webkit-transform: perspective(1px) translate(-50%, -80%);
-    // -ms-transform: perspective(1px) translate(-50%, -80%);
-    // transform: perspective(1px) translate(-50%, -80%);
-    // text-align: center;
-    color: white;
-    border: 2px dashed blue;
-}
-*/
-.down-arrow-wrapper {
-    height: 15%;
-    width: 85%;
     margin: 0 auto;
-}
-
-.down-arrow-wrapper a {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: perspective(1px) translate(-50%,-50%);
-    -ms-transform: perspective(1px) translate(-50%,-50%);
-    transform: perspective(1px) translate(-50%, -50%);
+    margin-top: 10%;
     text-align: center;
+    color: white;
 }
 
-.down-arrow-wrapper .fa-chevron-down {
-  color: white;
-  border-radius: 50px;
-  border: 2px solid white;
-  font-size: 3em;
-  text-decoration: none;
-}
+.down-arrow {
+    position: relative;
+    cursor: pointer;
+    width: 54px;
+    height: 54px;
+    margin: 0 auto;
+    color: white;
+  }
+  
+  .down-arrow a {
+    position: absolute;
+    top: 0px;
+    transition:top 0.10s linear;
+  }
+  
+  .down-arrow a:hover {
+    top: 10px;
+    transition:top 0.10s linear;
+  }
 
-.down-arrow-wrapper .fa-chevron-down:hover,
-.down-arrow-wrapper .fa-chevron-down:focus,
-.down-arrow-wrapper .fa-chevron-down:active {
-    position: relative; 
-    top: 4px;
-    left: 4px;
-    text-decoration: none;
-}
-*/
 /*****************************************************************************/
 /* Media Quiery Section - Mobile First Method                                */
 /*****************************************************************************/
